@@ -21,7 +21,7 @@ export const GiftPage = ({ extraClass = "" }) => {
 
   const [wishData, setWishData] = useState({});
   useEffect(() => {
-    if (sessionStorage.getItem("auth_token")) {
+    if (sessionStorage.getItem("access_token")) {
       Promise.all([getCard(id), getOwnWishes()]).then(([card, wishlist]) => {
         setWishData(card);
         const goodInMyWish = wishlist.find((item) => item.id === card.id);

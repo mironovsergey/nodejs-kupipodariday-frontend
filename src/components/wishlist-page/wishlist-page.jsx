@@ -18,7 +18,7 @@ export const WishlistPage = ({ extraClass = "" }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem("auth_token")) {
+    if (sessionStorage.getItem("access_token")) {
       getOwnWishes().then((res) => {
         setOwnWishes(res);
       });

@@ -24,7 +24,7 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
       setStep(2);
     }
     // loginUser(userData.username, userData.password).then((res) => {
-    //   if (res && res.auth_token) {
+    //   if (res && res.access_token) {
     //     getUser().then((res) => {
     //       if (res && res.id) {
     //         history.replace({ pathname: "/" });

@@ -23,7 +23,7 @@ function App() {
   const [userCtx, setUserCtx] = useState(null);
 
   useEffect(() => {
-    if (sessionStorage.getItem("auth_token")) {
+    if (sessionStorage.getItem("access_token")) {
       getOwnUser().then((res) => {
         setUserCtx(res);
       });
